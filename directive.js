@@ -4,9 +4,8 @@ var APP = angular.module('APP', [])
 			scope: {
 			    num:'=' 
 			},
-			restrict: 'AE',
-			replace: true,
-			template: '<div><div>{{dataNum}}</div><div id="b">{{unit}}</div><div>',
+			restrict: 'AE', 
+			template: '<div class="value">{{dataNum}}</div><div class="unit">{{unit}}</div>',
 			controller: function($scope) {
 					$scope.data = 10000;
 					var output = '';
